@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome To i-Learning Math</title>
+    <link rel="stylesheet" href="css/FAQ.css">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Margarine|Patrick+Hand|Domine" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+
+      </header>
+      <div class="navigationDesktop">
+        <nav>
+      <ul>
+          <li class="active"><a href="index.html">Home</a>
+          </li>
+          <li><a href="video.html">Watch & Learn</a>
+          </li>
+          <li><a href="notes.html">Notes</a>
+          </li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <li><a href="FAQ.html">F.A.Q</a></li>
+        </ul>
+   </nav>
+      </div>
+
+<br><br>
+<div class="form">
+  <br>
+  <h1>Ask us Questions</h1>
+      <form action="/action_page.php">
+        <br>
+        <label for="fullname">&ensp;&ensp;&ensp;&ensp;Name: </label>
+       <input type="text" id="" name="name" placeholder="Your name..">
+<br><br>
+<label for="questions">Questions: </label>
+<input type="text" id="" name="questions" placeholder="Your questions..">
+<br><br>
+<input type="submit" value="Send Questions Now!!">
+<br><br><br>
+</form>
+    </div>
+<hr>
+
+<br>
+<button id="hide">Hide F.A.Q</button>
+<button id="show">Show F.A.Q</button>
+<br><br><br><br><br><br>
+<center><h4>If you click on the "Hide" button, this section will disappear.</h4></center><br>
+<center><p>1). Given that α and β are the root of the 2x^2 + 3x - 9 = 0, form new equation with root α/2 and β/2</p></center><br>
+<center>
+<iframe width="1000" height="615" src="https://www.youtube.com/embed/IRrJolZgRL0?start=74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+<br>
+<hr>
+    <div class="subscribe">
+    <form action="/action.php">
+    <div class="container"><br>
+      <h1><center>Subscribe to our Newsletter</center></h1>
+      <p>Get updated with more upcoming posts sent straight to your inbox</p>
+      <br>
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="text" placeholder="Email address" name="mail" required>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+      </label>
+<br><br>
+      <input type="submit" value="Subscribe">
+      <br><br>
+    </div>
+    </form>
+    </div>
+    <br><br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("iframe").hide();
+    $("h4").hide();
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("iframe").show();
+    $("h4").show();
+    $("p").show();
+  });
+});
+</script>
+
+</body>
+
+  <div class="footer">
+    <h4 class="follow">Follow us on</h4>
+    <p>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+  </p>
+  <p> &copy; 2019 Mathness.Co</p>
+  </div>
+
+</html>

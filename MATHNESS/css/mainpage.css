@@ -1,0 +1,834 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box; 
+  text-decoration: none;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+.wrapper{
+  min-height: 500px;
+  width:100%;
+  position:relative;
+  margin-bottom: 900px;
+
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 10%;
+  left: 180px;
+  transform: translate(-50%, -50%);
+}
+
+body{
+  height:100%;
+  background-image: url("image/white.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+}
+
+section{
+  background:0 100px;
+  height:100vh;
+  align-items: center;
+}
+
+.rightcolumn h2{  
+  text-align: center;
+  margin-top:15px;
+  padding:50px 0 0;
+  font-family: 'Bangers', cursive;
+  font-size: 48px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  color:#d63568;
+}
+
+.transparentbox{
+  margin-left:18%;
+  margin-top:15px;
+  position: static;
+  max-width: 900px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius:30px;
+  box-shadow:0 5px 15px rgba(0,0,0,.5);
+}
+
+.transparentbox p{
+  text-align:justify;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size:20px;
+}
+
+.transparentbox2{
+  right:100px;
+  margin-top:15px;
+  position: static;
+  max-width: 300px;
+  padding: 40px 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius:30px;
+  box-shadow:0 5px 15px rgba(0,0,0,.5);
+}
+
+.navigationDesktop{ /* NAVIGATION BAR */
+  width:100%;
+  height: 60px;
+  margin:0 auto 0;
+  background-image: url("image/chalk1.jpg");
+  position: relative;
+  padding-top:10px;
+  top:1px;
+}
+
+nav {
+  height:80px;
+  width:800px;
+  margin:0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav a{
+  display:block;
+  text-decoration: none;
+  font-family: 'Bangers', cursive;
+  font-weight: inherit;
+  font-size:20pt;
+  color:white;
+  
+
+}
+
+nav a:hover{
+  background:#42c2f4;
+  color:black;
+  border-radius: 20px; 
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav ul li{
+  float:left;
+  width:150px;
+  height:40px;
+  line-height: 40px;
+  display: block;
+}
+
+
+nav ul ul li{
+  position:relative;
+  display:none;
+  background-image: url("image/chalk1.jpg");
+}
+
+nav ul ul ul{
+  display:none;
+}
+
+nav ul li:hover ul li{
+  display: block;
+  animation: navmenu 560ms forwards;
+}
+
+@keyframes navmenu{
+  0%{
+    opacity:0;
+    top:5px;
+  }
+  100%{
+    opacity:1;
+    top:0px;
+  }
+}
+
+nav ul ul li:hover ul{
+  display:block;
+  position:absolute;
+  width:140px;
+  left:140px;
+  top:0px;
+
+}
+
+article{
+  padding:10px;
+  font-family: arial;
+  line-height: 40px;
+}
+
+
+.leftcolumn {   
+  float: left;
+  width: 30%;
+  height: 800px;
+}
+
+.col-container {
+  display: table;
+  padding-left: 50px;
+}
+
+.col {
+  display: table-cell;
+  -webkit-column-gap: 40px;
+  column-gap: 40px;
+  padding: 5px;
+}
+
+.info{
+  padding-top: 30px;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-bottom: 50px;
+  font-family: 'Noto Sans JP', sans-serif;
+  cursor: pointer;
+}
+
+.info:hover{
+  background:#fffa65;
+  border-radius:20px; 
+  width: 200px;
+}
+
+.profile{
+  justify-content: inherit;
+  font-family: 'Fredoka One', cursive;
+  font-size: 14pt;
+  color:#82ccdd;
+  letter-spacing: 2px;
+}
+
+/* Fake image */
+.fakeimg1 {
+  background-image: url("image/girl1.jpg");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding:50px;
+  border-radius: 200%;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+}
+
+.fakeimg2 {
+  background-image: url("image/girl2.jpg");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding:50px;
+  border-radius: 200%;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+}
+
+.fakeimg3 {
+  background-image: url("image/girl3.jpg");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding:50px;
+  border-radius: 200%;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+}
+
+.fakeimg4 {
+  background-image: url("image/girl4.jpg");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding:50px;
+  border-radius: 200%;
+  height: 100px;
+  width: 100px;
+  position:absolute;
+}
+
+/* Right column */
+.rightcolumn { 
+  float: none; 
+  width: 100%;
+  }
+
+.bottomcolumn {
+    float: left;
+    width: 100%;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* FOOTER */
+
+  .footer {
+   position: static;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:10rem;
+   padding-bottom: 2.5rem;
+   background-color: #f95757;
+   color: white;
+   border-top: 5px solid black;
+   text-align: center;
+   font-family: 'Domine', serif;
+   letter-spacing: 2px;
+}
+
+.follow {
+  padding-top: 30px;
+  font-size: 1.4em;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 50px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 2px;
+  border-radius: 50%;
+}
+
+.fa-facebook:hover {
+    background: #3B5998;
+}
+
+.fa-twitter:hover {
+    background: #55ACEE;
+}
+
+.fa-google:hover {
+    background: #dd4b39;
+
+}
+
+.fa-youtube:hover {
+     background: #bb0000;
+}
+
+.fa-instagram:hover {
+    background: #125688;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-google {
+  color: white;
+}
+
+.fa-youtube {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+
+/* pop up */
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 150px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-image: url("image/chalk1.jpg");
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 600px; /* Could be more or less, depending on screen size */
+  height: 200px;
+  border-radius: 50px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.logo{
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+.logo img{
+  min-width: 50px;
+  min-height: 50px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 80%;
+  left: 180px;
+  border: 3px solid #f9ca24;
+}
+
+/* slideshow */
+.fotorama{
+  width: 100%;
+  height: 450px;
+  top: 30px;
+  background: #f6e58d;
+}
+
+/* back to top */
+#topBtn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  background:#2f3542;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  border-radius: 30px;
+}
+
+#topBtn:hover{
+  background-color:#feca57;
+}
+
+
+ /* quote box */
+.quote{
+  position: relative;
+  width: 900px;
+  height: 300px;
+  margin: 50px auto 900px;
+  
+}
+
+
+/* box1 */
+
+.quote .box1{
+  position: relative;
+  width: 400px;
+  height: calc(300px - 30px);
+  background:#95afc0;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.quote .box1 .boxIcon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #6a89cc;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.quote .box1:hover .boxIcon{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.quote .box1 .boxIcon .fa{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color:#fff;
+}
+
+.quote .box1:hover .boxIcon .fa{
+  font-size: 40px;
+}
+
+.quote .box1 .text{
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  font-style: italic;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.quote .box1:hover .text {
+  top: 100px;
+  opacity: 2;
+
+}
+.quote .box1 .text h3{
+  margin: auto;
+  padding: 0;
+  color:white;
+  font-size: 24px;
+  font-family: 'Old Standard TT', serif;
+
+}
+
+.quote .box1 .text p{
+  margin: 0;
+  padding: 0;
+  color:yellow;
+  font-size: 20px;
+  font-family: 'Old Standard TT', serif;
+}
+
+/* box2 */
+
+.quote .box2{
+  position: relative;
+  width: 400px;
+  height: calc(300px - 30px);
+  background:#f0932b;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.quote .box2 .boxIcon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f6b93b;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.quote .box2:hover .boxIcon{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.quote .box2 .boxIcon .fa{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color:#fff;
+}
+
+.quote .box2:hover .boxIcon .fa{
+  font-size: 40px;
+}
+
+.quote .box2 .text{
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  font-style: italic;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.quote .box2:hover .text {
+  top: 100px;
+  opacity: 2;
+
+}
+.quote .box2 .text h3{
+  margin: auto;
+  padding: 0;
+  color:white;
+  font-size: 24px;
+  font-family: 'Old Standard TT', serif;
+
+}
+
+.quote .box2 .text p{
+  margin: 0;
+  padding: 0;
+  color:yellow;
+  font-size: 18px;
+  font-family: 'Old Standard TT', serif;
+
+}
+
+/* box3 */
+
+.quote .box3{
+  position: relative;
+  width: 400px;
+  height: calc(300px - 30px);
+  background:#EE5A24;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.quote .box3 .boxIcon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #eb2f06;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.quote .box3:hover .boxIcon{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.quote .box3 .boxIcon .fa{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color:#fff;
+}
+
+.quote .box3:hover .boxIcon .fa{
+  font-size: 40px;
+}
+
+.quote .box3 .text{
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  font-style: italic;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.quote .box3:hover .text {
+  top: 100px;
+  opacity: 2;
+
+}
+.quote .box3 .text h3{
+  margin: auto;
+  padding: 0;
+  color:white;
+  font-size: 24px;
+  font-family: 'Old Standard TT', serif;
+
+}
+
+.quote .box3 .text p{
+  margin: 0;
+  padding: 0;
+  color:yellow;
+  font-size: 20px;
+  font-family: 'Old Standard TT', serif;
+
+}
+
+/* box4 */
+
+.quote .box4{
+  position: relative;
+  width: 400px;
+  height: calc(300px - 30px);
+  background:#ED4C67;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.quote .box4 .boxIcon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #b71540;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.quote .box4:hover .boxIcon{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.quote .box4 .boxIcon .fa{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color:#fff;
+}
+
+.quote .box4:hover .boxIcon .fa{
+  font-size: 40px;
+}
+
+.quote .box4 .text{
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  font-style: italic;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.quote .box4:hover .text {
+  top: 100px;
+  opacity: 2;
+
+}
+.quote .box4 .text h3{
+  margin: auto;
+  padding: 0;
+  color:white;
+  font-size: 24px;
+  font-family: 'Old Standard TT', serif;
+
+}
+
+.quote .box4 .text p{
+  margin: 0;
+  padding: 0;
+  color:yellow;
+  font-size: 20px;
+  font-family: 'Old Standard TT', serif;
+
+}
